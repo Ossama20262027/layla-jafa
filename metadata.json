@@ -1,0 +1,6 @@
+{
+  "name": "ليلة جافة",
+  "description": "تطبيق لطيف لمتابعة عادات النوم والليالي الجافة وتشجيع الطفل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

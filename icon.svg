@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#2e1065" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="sproutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Stars in background -->
+  <circle cx="120" cy="110" r="4" fill="#ffffff" opacity="0.8" />
+  <circle cx="390" cy="140" r="5" fill="#fef08a" opacity="0.9" />
+  <circle cx="100" cy="340" r="3.5" fill="#ffffff" opacity="0.6" />
+  <circle cx="420" cy="360" r="4" fill="#fde047" opacity="0.7" />
+  <path d="M 370 210 L 375 225 L 390 227 L 378 238 L 382 252 L 370 243 L 358 252 L 362 238 L 350 227 L 365 225 Z" fill="#fef08a" opacity="0.85" />
+  <path d="M 150 170 L 153 180 L 163 181 L 155 188 L 157 198 L 150 192 L 143 198 L 145 188 L 137 181 L 147 180 Z" fill="#ffffff" opacity="0.75" />
+
+  <!-- Crescent Moon -->
+  <path d="M 290 120 C 220 120 165 175 165 245 C 165 315 220 370 290 370 C 318 370 344 361 365 345 C 300 340 250 285 250 220 C 250 162 290 128 340 125 C 324 122 307 120 290 120 Z" 
+        fill="url(#moonGrad)" filter="url(#glow)" />
+
+  <!-- Sleeping peaceful smiling eye on Moon -->
+  <path d="M 235 230 Q 248 245 260 230" fill="none" stroke="#b45309" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Little hopeful green sprout (growth & encouragement) -->
+  <path d="M 275 360 Q 285 320 260 295 Q 240 310 248 345 Z" fill="url(#sproutGrad)" />
+  <path d="M 270 330 Q 300 315 310 335 Q 290 345 270 330 Z" fill="#22c55e" />
+
+  <!-- Small glowing sparkle -->
+  <circle cx="280" cy="270" r="7" fill="#ffffff" opacity="0.9" filter="url(#glow)" />
+</svg>
